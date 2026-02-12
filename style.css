@@ -9,7 +9,7 @@
 
 :root {
   --font-family: "Ruberoid", sans-serif;
-  --cursor: url("/img/pointer.png"), default;
+  --cursor: url("./img/pointer.png"), default;
   --font-size-Regular: 400;
   --font-size-Medium: 500;
   --font-size-SemiBold: 600;
@@ -31,6 +31,10 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
+}
+
+a > button {
+  cursor: var(--cursor);
 }
 
 h4 {
@@ -82,7 +86,6 @@ p {
 .carousel__item--main {
   transform: translate(-50%, -50%) scale(1);
   z-index: 2;
-  cursor: pointer;
   visibility: visible;
 }
 
@@ -187,7 +190,7 @@ p {
   border: 1.5px solid #153630;
   border-radius: 50%;
   box-shadow: 0 0 106px 0 rgba(46, 236, 197, 0.1);
-  cursor: pointer;
+  cursor: var(--cursor);
   display: flex;
   justify-content: center;
   align-items: center;
