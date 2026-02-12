@@ -144,11 +144,19 @@ p {
   height: 57px;
   box-shadow: 0 0 38px 0 rgba(46, 236, 197, 0.1);
   background: rgba(46, 236, 197, 0.1);
-  font-family: RuberoidSemiBold, sans-serif;
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button > p {
+font-family: RuberoidSemiBold, sans-serif;
+  font-weight: var(--font-size-SemiBold);
   font-size: 17px;
   color: #fff;
 }
+
 .price-block {
   display: flex;
   justify-content: space-between;
