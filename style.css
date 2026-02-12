@@ -198,7 +198,11 @@ color: rgba(255, 255, 255, 0.75);
   }
 
   .carousel {
-    left: 40%;
+    position: relative;
+   justify-content: center;
+  
+    left: 0;
+
   }
 
   .carousel__item {
