@@ -1,30 +1,107 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style-tarif.css" />
-  <title>Слайдер Тарифов</title>
-</head>
-<body>
-  <div class="content">
-    <div class="slider-tarif_container">
-      <div class="slider-tarif" id="slider"></div>
-
-      <div class="button-block">
-        <button id="left" aria-label="Предыдущий слайд">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel__item carousel__item--left">
+          <div class="carousel__text">
+            <h4>Сайт "Визитка"</h4>
+            <p>
+              Сайт-визитка - компактный веб-ресурс – отличный старт бизнеса в
+              интернете. Сайт-визитка содержит несколько страниц, в том числе –
+              информацию о компании, её товарах и услугах, прейскурант цен,
+              контакты и координаты для связи.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item carousel__item--main">
+          <div class="carousel__text">
+            <h4>Сайт "Lending Page</h4>
+            <p>
+              Одностраничный сайт (Landing Page) – так называют промо-сайты для
+              презентации товара, услуги и организации мгновенных продаж. Мы
+              умеем создавать веб-ресурсы, полностью готовые к наплыву лавины
+              посетителей. Одна-единственная страница принесёт колоссальную
+              прибыль: иначе и быть не может.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item carousel__item--right">
+          <div class="carousel__text">
+            <h4>Сайт "Специалиста"</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              fugit voluptas veniam adipisci libero necessitatibus pariatur
+              animi deleniti officiis ut possimus laborum expedita eius deserunt
+              aliquid illum assumenda, non at.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__text">
+            <h4>Сайт "Компании"</h4>
+            <p>
+              Корпоративный сайт – это крупномасштабный портал, который
+              создается не только для контакта организации с клиентами, но и для
+              обмена информацией, мнениями, идеями между сотрудниками и
+              руководством. Электронный ресурс такого типа – лицо компании,
+              солидный «костюм», вызывающий у партнёров и контрагентов уважение
+              и интерес.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__text">
+            <h4>Сайт "Интернет магазин</h4>
+            <p>
+              Сайт-визитка - компактный веб-ресурс – отличный старт бизнеса в
+              интернете. Сайт-визитка содержит несколько страниц, в том числе –
+              информацию о компании, её товарах и услугах, прейскурант цен,
+              контакты и координаты для связи.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__text">
+            <h4>Сайт "Каталог</h4>
+            <p>
+              Сайт-каталог – это полноценный веб-ресурс, в котором потребители
+              могут ознакомиться с товарами или услугами компании. Являясь
+              удобным инструментом продаж, сайт-каталог может повысить
+              доходность бизнеса и упростить задачу по предоставлению
+              ассортимента целевой аудитории.
+            </p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__text">
+            <h4>Сайт "Индивидуальный</h4>
+            <p>
+              Мы готовы выслушать вашу идею, и выполнить задание. Цена проекта
+              будет складываться от ее технического задания и сроков выполнения.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__btns">
+        <button class="carousel__btn" id="leftBtn">
           <div class="ball">
-            <img src="./img/arrowleft.svg" alt="Назад" />
+            <img src="./img/arrowleft.svg" alt="" />
           </div>
         </button>
-        <button id="right" aria-label="Следующий слайд">
+        <button class="carousel__btn" id="rightBtn">
           <div class="ball">
-            <img src="./img/arrowright.svg" alt="Вперёд" />
+            <img src="./img/arrowright.svg" alt="" />
           </div>
         </button>
       </div>
     </div>
-  </div>
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
