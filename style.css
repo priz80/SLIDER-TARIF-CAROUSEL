@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -211,7 +210,7 @@ button > p {
   margin: -10px;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1360px) {
   .carousel::before {
     content: "Zoom down please: Ctrl -";
     text-transform: uppercase;
