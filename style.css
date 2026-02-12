@@ -214,7 +214,6 @@ button > p {
 @media (max-width: 1160px) {
   .carousel::before {
     content: "Zoom down please: Ctrl -";
-    
     text-transform: uppercase;
     color: red;
     font-weight: 800;
