@@ -76,7 +76,7 @@ p {
   position: absolute;
   transform: translate(-50%, -50%) scale(0.1);
   z-index: 0;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
   display: flex;
   justify-content: center;
   align-items: center;
