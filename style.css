@@ -184,3 +184,28 @@ color: rgba(255, 255, 255, 0.75);
   height: 90px;
   margin: -10px;
 }
+
+
+@media (max-width: 1160px) {
+
+
+  .carousel::before {
+    content: 'Zoom down please';
+    text-transform: uppercase;
+    color: red;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .carousel {
+    left: 40%;
+  }
+
+  .carousel__item {
+    display: none;
+  }
+
+  .carousel__btns {
+    display: none;
+  }
+}
