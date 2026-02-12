@@ -6,9 +6,17 @@
   box-sizing: inherit;
   font-family: "Montserrat", sans-serif;
 }
-html {
-  font-size: 62.5%;
+
+:root {
+  --font-family: "Ruberoid", sans-serif;
+  --cursor: url("/img/pointer.png"), default;
+  --font-size-Regular: 400;
+  --font-size-Medium: 500;
+  --font-size-SemiBold: 600;
+  --font-size-Bold: 700;
+  --font-size-ExtraBold: 800;
 }
+
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
@@ -26,23 +34,22 @@ body {
 }
 
 h4 {
-  font-family: RuberoidBold, sans-serif;
-  font-weight: 700;
+  font-family: var(--font-family);
+  font-weight: var(--font-size-Bold);
   font-size: 32px;
   text-align: center;
   color: #fff;
-  padding-bottom: 14px;
 }
 
 p {
-  font-family: RuberoidMedium, sans-serif;
-font-weight: 500;
-font-size: 17px;
+  font-family: var(--font-family);
+  font-weight: var(--font-size-Medium);
+  font-size: 17px;
 
-/* line-height: 26px; */ 
-line-height: 154%;
-text-align: center;
-color: rgba(255, 255, 255, 0.75);
+  /* line-height: 26px; */
+  line-height: 154%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .carousel {
@@ -52,20 +59,19 @@ color: rgba(255, 255, 255, 0.75);
   left: 50%;
 }
 .carousel__item {
-  /* position: relative; */
   visibility: hidden;
-  /* height: 35rem;
-    width: 25rem; */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 36px;
   width: 370px;
   height: 570px;
-  /* overflow: hidden; */
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
   position: absolute;
   transform: translate(-50%, -50%) scale(0.1);
   z-index: 0;
   transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* .carousel__item img {
     width: 100%;
@@ -118,16 +124,46 @@ color: rgba(255, 255, 255, 0.75);
 } */
 
 .carousel__text {
-  /*   position: absolute; */
-  /*  bottom: 0; */
-  /*   z-index: 4; */
-  /* opacity: 0; */
   transition: opacity 0.2s;
-  /* width: 100%; */
   text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  padding: 44px 57px 23px 56px;
-  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 318px;
+  height: 100%;
+  padding-top: 41px;
+}
+
+.button {
+  border: 1.5px solid #2eecc5;
+  border-radius: 41px;
+  width: 172px;
+  height: 57px;
+  box-shadow: 0 0 38px 0 rgba(46, 236, 197, 0.1);
+  background: rgba(46, 236, 197, 0.1);
+  font-family: RuberoidSemiBold, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+}
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 23px;
+}
+.price > p {
+  font-family: var(--font-family);
+  font-weight: var(--font-size-Bold);
+  font-size: 22px;
+  line-height: 154%;
+  color: #fff;
+}
+.price > span {
+  font-family: var(--font-family);
+  font-weight: var(--font-size-Medium);
+  font-size: 17px;
+  line-height: 154%;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .carousel__btns {
@@ -185,24 +221,21 @@ color: rgba(255, 255, 255, 0.75);
   margin: -10px;
 }
 
-
 @media (max-width: 1160px) {
-
-
   .carousel::before {
-    content: 'Zoom down please';
+    content: "Zoom down please";
     text-transform: uppercase;
     color: red;
     font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-family);
+    font-weight: var(--font-size-ExtraBold);
   }
 
   .carousel {
     position: relative;
-   justify-content: center;
-  
-    left: 0;
+    justify-content: center;
 
+    left: 0;
   }
 
   .carousel__item {
