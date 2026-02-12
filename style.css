@@ -32,6 +32,13 @@ body {
   position: relative;
 }
 
+a,
+a > button,
+a button {
+  text-decoration: none !important;
+  outline: none;
+}
+
 a > button {
   cursor: var(--cursor);
 }
@@ -94,13 +101,17 @@ p {
   z-index: 1;
   visibility: visible;
   opacity: 0.65;
+   pointer-events: none;
 }
 .carousel__item--right {
   transform: translate(50%, -50%) scale(0.8);
   z-index: 1;
   visibility: visible;
   opacity: 0.65;
+  pointer-events: none;
 }
+
+
 
 .carousel__text {
   transition: opacity 0.2s;
