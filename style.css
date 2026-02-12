@@ -213,7 +213,8 @@ button > p {
 
 @media (max-width: 1160px) {
   .carousel::before {
-    content: "Zoom down please";
+    content: "Zoom down please: Ctrl -";
+    
     text-transform: uppercase;
     color: red;
     font-weight: 800;
@@ -224,8 +225,8 @@ button > p {
   .carousel {
     position: relative;
     justify-content: center;
-
-    left: 0;
+    left: auto;
+    text-align: center;
   }
 
   .carousel__item {
