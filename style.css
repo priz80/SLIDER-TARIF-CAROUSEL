@@ -37,6 +37,12 @@ a > button {
   cursor: var(--cursor);
 }
 
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
 h4 {
   font-family: var(--font-family);
   font-weight: var(--font-size-Bold);
@@ -49,8 +55,6 @@ p {
   font-family: var(--font-family);
   font-weight: var(--font-size-Medium);
   font-size: 17px;
-
-  /* line-height: 26px; */
   line-height: 154%;
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
@@ -78,11 +82,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-/* .carousel__item img {
-    width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-} */
 
 .carousel__item--main {
   transform: translate(-50%, -50%) scale(1);
@@ -102,30 +101,6 @@ p {
   visibility: visible;
   opacity: 0.65;
 }
-/* .carousel__item--left img,
-.carousel__item--right img {
-  filter: grayscale(80%);
-} */
-
-/* .carousel__item--right:hover {
-  transform: translate(10%, -50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--left:hover {
-  transform: translate(-110%, -50%) scale(1.2);
-  z-index: 3;
-  cursor: pointer;
-}
-.carousel__item--main:hover {
-  transform: translate(-50%, -50%) scale(1.2);
-}
-.carousel__item:hover > .carousel__text {
-  opacity: 1;
-}
-.carousel__item:hover img {
-  filter: grayscale(0%);
-} */
 
 .carousel__text {
   transition: opacity 0.2s;
@@ -152,7 +127,7 @@ p {
 }
 
 button > p {
-font-family: RuberoidSemiBold, sans-serif;
+  font-family: RuberoidSemiBold, sans-serif;
   font-weight: var(--font-size-SemiBold);
   font-size: 17px;
   color: #fff;
@@ -229,10 +204,7 @@ font-family: RuberoidSemiBold, sans-serif;
   width: 75px;
   height: 75px;
 }
-/* .carousel__btn svg {
-  height: 1.8rem;
-  width: 1.8rem;
-} */
+
 .carousel__btn:hover {
   width: 90px;
   height: 90px;
