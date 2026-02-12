@@ -1,7 +1,6 @@
 'use strict';
 
 const carouselItems = document.querySelectorAll('.carousel__item');
-console.log(carouselItems)
 let currentItem = document.querySelector('.carousel__item--main');
 const leftBtn = document.querySelector('#leftBtn');
 const rightBtn = document.querySelector('#rightBtn');
