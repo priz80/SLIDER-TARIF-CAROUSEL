@@ -76,10 +76,11 @@ p {
   position: absolute;
   transform: translate(-50%, -50%) scale(0.1);
   z-index: 0;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(155deg, #313134 0%, #292929 51.31%, #282828 100%);
 }
 
 .carousel__item--main {
