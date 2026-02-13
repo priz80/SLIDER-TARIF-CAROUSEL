@@ -182,6 +182,7 @@ button > p {
   pointer-events: none;
   z-index: 100;
 }
+
 .carousel__btn {
   pointer-events: auto;
   width: 70px;
@@ -197,6 +198,10 @@ button > p {
   transition: all 0.3s ease;
 }
 
+.carousel__btn:hover {
+ transform: scale(1.3);
+}
+
 .ball {
   width: 60px;
   height: 60px;
@@ -210,16 +215,7 @@ button > p {
   transition: all 0.3s ease;
 }
 
-.ball:hover {
-  width: 75px;
-  height: 75px;
-}
 
-.carousel__btn:hover {
-  width: 90px;
-  height: 90px;
-  margin: -10px;
-}
 
 @media (max-width: 1360px) {
   .carousel::before {
