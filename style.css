@@ -317,7 +317,7 @@ button > p {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 90%;
+    top: 80%;
     transform: translateY(-50%);
     gap: 35px;
     pointer-events: none;
