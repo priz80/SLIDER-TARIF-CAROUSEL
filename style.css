@@ -225,7 +225,7 @@ button > p {
     position: relative;
     margin: 0 auto; */
     position: relative;
-    height: 500px;
+    height: 700px;
   }
 
   .carousel {
@@ -318,7 +318,7 @@ button > p {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 90%;
+    top: 83%;
     transform: translateY(-50%);
     gap: 35px;
     pointer-events: none;
